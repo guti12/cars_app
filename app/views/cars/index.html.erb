@@ -1,11 +1,11 @@
 <h1>This is a list of all the cars</h1>
 
 <p><%= @all_cars.each do |car| %></p>
-			<div>
+			<a href="/cars/{:id}">
 				<%= car.year %>
 			  <%= car.make %>
 	 		  <%= car.model %>
 				<%= car.color %>
-			</div>
+			</a>
 		<% end %>
 
