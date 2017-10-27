@@ -1,7 +1,9 @@
 <h1>This is a list of all the cars</h1>
 
-<p><%= @all_cars.each do |car| %></p>
-			<a href="/cars/{:id}">
+<a href="/cars/new">Create New Car</a>
+
+<p><% @all_cars.each do |car| %></p>
+			<a href="/cars/<%= car.id %>">
 				<%= car.year %>
 			  <%= car.make %>
 	 		  <%= car.model %>

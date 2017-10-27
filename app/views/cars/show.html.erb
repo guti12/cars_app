@@ -1,7 +1,11 @@
 <h1>This is the car you selected</h1>
 
-<p><%= car.year %>
-	 <%= car.make %>
-	 <%= car.model %>
-	 <%= car.color %>
+<p><%= @car.year %>
+	 <%= @car.make %>
+	 <%= @car.model %>
+	 <%= @car.color %>
 </p>
+
+<a href="/cars/<%= @car.id %>/edit">Edit</a>
+
+<%= link_to "Delete", "/cars/#{ @car.id }", method: :delete %>
